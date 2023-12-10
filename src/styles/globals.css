@@ -18,6 +18,23 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: auto;
+  height: 3rem;
+  background: white;
+  border-top: solid 1px #eee;
+  z-index: 100;
+}
+
+figure {
+  position: relative;
+  min-width: 400px;
+}
+
 .item {
   transition: all .25s ease;
 }
@@ -28,8 +45,48 @@ body {
   background: white;
 }
 
-@media (max-width: 900px) {
-  .portfolio {
-    grid-template-columns: repeat(1, 1fr);
+.brands img {
+  display: block;
+}
+
+.figma-icon,
+.vscode-icon {
+  position: absolute;
+  bottom: -1rem;
+  right: -1rem;
+  background-color: #222;
+  border-radius: 1rem;
+  padding: 1rem;
+  object-fit: cover;
+}
+
+@media (max-width: 1000px) {
+  .brands {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .brands img {
+    margin: 2rem auto;
+  }
+
+  figure {
+    display: flex;
+    justify-content: center;
+    min-width: 0;
+  }
+
+  figure img {
+    max-width: 100%;
+  }
+
+  .figma-icon,
+  .vscode-icon {
+    position: static;
+  }
+
+  .figma-icon + img,
+  .vscode-icon + img {
+    display: none;
   }
 }
