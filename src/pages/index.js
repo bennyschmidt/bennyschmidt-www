@@ -135,16 +135,18 @@ export default function Home() {
        * may include an extra item.
        */
 
+      const { length } = PORTFOLIO;
+
       setPortfolio(
         new Array(colCount)
         .fill()
         .map((_, index) => {
-          const chunkSize = (PORTFOLIO.length / colCount) << 0;
+          const chunkSize = (length / colCount) << 0;
           const chunkStart = chunkSize * index;
 
           const chunkEnd = index < (colCount - 1)
             ? chunkStart + chunkSize
-            : Infinity;
+            : length;
 
           return PORTFOLIO.slice(chunkStart, chunkEnd);
         })
