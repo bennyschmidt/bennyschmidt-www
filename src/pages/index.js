@@ -108,17 +108,6 @@ const greatVibes = GreatVibes({
   weight: '400'
 });
 
-const SocialMedia = () => (
-  <h3 className="flex gap-1 items-center justify-center mb-4">
-    <a href="https://www.dribbble.com/bennyschmidt" target="_blank">
-      <img alt="Benny Schmidt on Dribbble" src="/img/dribbble.svg" className="rounded" width="24px" height="24px" />
-    </a>
-    <a href="https://www.github.com/bennyschmidt" target="_blank">
-      <img alt="Benny Schmidt on GitHub" src="/img/github.svg" className="rounded" width="24px" height="24px" />
-    </a>
-  </h3>
-);
-
 export default function Home() {
   const [portfolio, setPortfolio] = useState();
   const [colCount, setColCount] = useState();
@@ -126,8 +115,8 @@ export default function Home() {
   useEffect(() => {
 
     /**
-     * The responsive override is necessary to
-     * for a simpler stacking grid effect (like Pinterest).
+     * The responsive override is necessary for
+     * a simpler stacking grid effect (like Pinterest).
      */
 
     setColCount(
@@ -174,15 +163,11 @@ export default function Home() {
   return !portfolio ? <div /> : (
     <div className="min-h-screen">
       <header>
-        <h1 className={`text-center text-5xl text-slate-600 mt-3 lowercase ${greatVibes.className}`}>
+        <h1 className={`text-center text-5xl text-slate-400 my-10 lowercase ${greatVibes.className}`}>
           Benny
         </h1>
       </header>
       <main className={`flex flex-col items-center ${inter.className}`}>
-        <h2 className="text-center text-sm text-slate-400 mt-4 mb-2">
-          Designer + Developer
-        </h2>
-        <SocialMedia />
         <section className="flex gap-5 items-start justify-center w-5/6">
           {portfolio.map((list, index) => (
             <ul key={index} className="flex flex-col justify-start gap-5 list-none w-full">
@@ -203,12 +188,17 @@ export default function Home() {
           ))}
         </section>
         <footer className="py-4">
-          <SocialMedia />
-          <p className="text-sm text-slate-600">
-            <a href="mailto:hello@bennyschmidt.com" target="_blank">
-              hello@bennyschmidt.com
+          <h3 className="flex gap-2 items-center justify-center mb-4">
+            <a href="https://www.dribbble.com/bennyschmidt" target="_blank">
+              <img alt="Benny Schmidt on Dribbble" src="/img/dribbble.svg" className="rounded" width="24px" height="24px" />
             </a>
-          </p>
+            <a href="https://www.github.com/bennyschmidt" target="_blank">
+              <img alt="Benny Schmidt on GitHub" src="/img/github.svg" className="rounded" width="24px" height="24px" />
+            </a>
+            <a href="mailto:hello@bennyschmidt.com" target="_blank">
+              <img alt="Send email to Benny Schmidt" src="/img/chat.svg" className="rounded" width="24px" height="24px" />
+            </a>
+          </h3>
         </footer>
       </main>
     </div>
