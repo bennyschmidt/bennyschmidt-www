@@ -166,6 +166,8 @@ export default function Home() {
     return () => removeEventListener('resize', onResize);
   }, [colCount]);
 
+  const full = colCount < 2;
+
   return !portfolio ? <div /> : (
     <div className="min-h-screen max-w-[1600px] mx-auto">
       <header>
@@ -201,7 +203,7 @@ export default function Home() {
           <Image alt="Lionsgate" src="/img/brands/lionsgate.png" width={150} height={20} className="object-contain" />
           <Image alt="Red Bull" src="/img/brands/redbull.png" width={100} height={61} className="object-contain" />
         </div>
-        <div className={`flex ${colCount < 3 ? 'flex-col' : ''} items-start justify-between gap-20 w-4/5 my-16`}>
+        <div className={`flex ${full ? 'flex-col' : ''} items-start justify-around gap-20 w-4/5 my-16`}>
           <figure>
             <Image
               alt="Figma"
@@ -221,16 +223,16 @@ export default function Home() {
               }}
             />
           </figure>
-          <div className="flex flex-col justify-start">
+          <div className={`flex flex-col justify-start max-w-[${full ? '100%' : '600px'}]`}>
             <h2 className="text-slate-800 font-semibold mb-4">Pixel Perfect Product Designer</h2>
             <p className="text-slate-800">Benny has held professional positions at top companies as both a Product Designer and as a Software Engineer. With a design degree and passion for UI/UX, Benny enjoys delighting users with fun experiences and intuitive interfaces.</p>
           </div>
         </div>
-        <div className={`flex ${colCount < 3 ? 'flex-col-reverse' : ''} items-start justify-between gap-20 w-4/5 my-16`}>
-          <div className="flex flex-col justify-start">
+        <div className={`flex ${full ? 'flex-col-reverse' : ''} items-start justify-around gap-20 w-4/5 my-16`}>
+          <div className="flex flex-col justify-start max-w-[600px]">
             <h2 className="text-slate-800 font-semibold mb-4">Full Stack React Developer</h2>
             <p className="text-slate-800">Benny has been programming for 20+ years, and has recently focused almost exclusively on dynamic languages like Node, Ruby, and Python, and front-end frameworks like React.</p>
-            <div className="text-xs text-slate-500 mt-4 font-semibold">
+            <div className="text-sm text-slate-500 mt-4">
               <h6>Current favorites:</h6>
               <ul className="list-none px-2">
                 <li className="my-2">Next.js on Vercel</li>
