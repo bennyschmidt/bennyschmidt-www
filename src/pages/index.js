@@ -150,12 +150,12 @@ export default function Home() {
   return !portfolio ? <div /> : (
     <div className="min-h-screen max-w-[1600px] mx-auto">
       <header>
-        <h1 className={`text-center text-5xl text-slate-400 my-10 lowercase ${greatVibes.className}`}>
+        <h1 className={`text-center text-[2.4em] text-slate-400 my-10 lowercase ${greatVibes.className}`}>
           Benny
         </h1>
       </header>
       <main className={`flex flex-col items-center ${inter.className}`}>
-        <section className="flex gap-5 items-start justify-center w-5/6">
+        <section className="flex gap-5 pb-8 items-start justify-center w-5/6">
           {portfolio.map((list, index) => (
             <ul key={index} className="flex flex-col justify-start gap-5 list-none w-full">
               {list.map(({ id, alt, src, href, year }) => (
