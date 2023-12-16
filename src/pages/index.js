@@ -210,7 +210,7 @@ export default function Home() {
         <div className={`flex ${full ? 'flex-col-reverse' : ''} items-start justify-around gap-20 w-4/5 my-16`}>
           <div className="flex flex-col justify-start max-w-[600px]">
             <h2 className="text-slate-800 font-semibold mb-4">Full Stack React Developer</h2>
-            <p className="text-slate-800">Benny has been programming for 20+ years, and has recently focused almost exclusively on dynamic languages like Node, Ruby, and Python, and front-end frameworks like React.</p>
+            <p className="text-slate-800">Benny has been programming forever, well, for about 25 years. In recent years, his focus is almost exclusively on dynamic languages like Node, Ruby, and Python, and front-end frameworks like React.</p>
             <div className="text-sm text-slate-500 mt-4">
               <h6>Current favorites:</h6>
               <ul className="list-none px-2">
