@@ -253,9 +253,6 @@ export default function Home() {
             <a href="https://www.github.com/bennyschmidt" target="_blank">
               <img alt="Benny Schmidt on GitHub" src="/img/github.svg" className="rounded" width="24px" height="24px" />
             </a>
-            <a href="mailto:hello@bennyschmidt.com" target="_blank">
-              <img alt="Send email to Benny Schmidt" src="/img/chat.svg" className="rounded" width="24px" height="24px" />
-            </a>
           </h3>
         </footer>
       </main>
