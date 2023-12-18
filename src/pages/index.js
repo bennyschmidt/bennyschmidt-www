@@ -204,7 +204,7 @@ export default function Home() {
           </figure>
           <div className={`flex flex-col justify-start max-w-[${full ? '100%' : '600px'}]`}>
             <h2 className="text-slate-800 font-semibold mb-4">Pixel Perfect Product Designer</h2>
-            <p className="text-slate-800">Benny has held professional positions at top companies as both a Product Designer and as a Software Engineer. With a design degree and passion for UI/UX, Benny enjoys delighting users with fun experiences and intuitive interfaces.</p>
+            <p className="text-slate-800">Benny is a master at Photoshop & Figma and has held professional positions at top companies as both a Product Designer and as a Software Engineer. With a design degree and passion for UI/UX, Benny enjoys delighting users with fun experiences and intuitive interfaces.</p>
           </div>
         </div>
         <div className={`flex ${full ? 'flex-col-reverse' : ''} items-start justify-around gap-20 w-4/5 my-16`}>
