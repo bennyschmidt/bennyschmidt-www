@@ -240,7 +240,10 @@ export default function Home() {
             />
           </figure>
         </div>
-        <aside className="flex items-center justify-center mt-10 mb-20">
+        <aside className={`flex items-center justify-center gap-4 mt-10 mb-20${colCount < 3 ? ' flex-col' : ''}`}>
+          <a href="https://www.figma.com/file/di7L8balWujJqWyfQYbGbh/Resume?type=design&node-id=10%3A32" target="_blank" className="text-slate-600 border-solid border-2 border-slate-200 rounded-full px-8 py-2">
+            Open Resume in Figma
+          </a>
           <a href="mailto:hello@bennyschmidt.com" target="_blank" className="text-slate-600 border-solid border-2 border-slate-200 rounded-full px-8 py-2">
             Get in touch
           </a>
