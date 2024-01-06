@@ -241,10 +241,11 @@ export default function Home() {
           </figure>
         </div>
         <aside className={`flex items-center justify-center gap-4 mt-10 mb-20${colCount < 3 ? ' flex-col' : ''}`}>
-          <a href="https://www.figma.com/file/di7L8balWujJqWyfQYbGbh/Resume?type=design&node-id=10%3A32" target="_blank" className="text-slate-600 border-solid border-2 border-slate-200 rounded-full px-8 py-2">
-            Open Resume in Figma
+          <a href="https://www.figma.com/file/di7L8balWujJqWyfQYbGbh/Resume?type=design&node-id=10%3A32" target="_blank" className="flex items-center justify-center text-slate-600 border-solid border-2 border-slate-200 rounded-full px-8 py-2 hover:bg-slate-600 hover:text-white hover:border-transparent">
+            <img src="/img/figma.svg" alt="Open resume in Figma" width={14} height={14} />&nbsp;
+            View resume
           </a>
-          <a href="mailto:hello@bennyschmidt.com" target="_blank" className="text-slate-600 border-solid border-2 border-slate-200 rounded-full px-8 py-2">
+          <a href="mailto:hello@bennyschmidt.com" target="_blank" className="text-slate-600 border-solid border-2 border-slate-200 rounded-full px-8 py-2 hover:bg-slate-600 hover:text-white hover:border-transparent">
             Get in touch
           </a>
         </aside>
