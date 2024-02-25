@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 
+import Link from 'next/link';
 import Image from 'next/image';
 
 import {
@@ -115,7 +116,7 @@ const Logos = () => {
     <div className="min-h-screen max-w-[800px] mx-auto">
       <header>
         <h1 className={`text-center text-[2em] text-slate-400 mt-5 mb-0 lowercase ${greatVibes.className}`}>
-          <a href="/">Benny</a>
+          <Link href="/">Benny</Link>
         </h1>
         <h2 className={`text-center font-bold text-[4em] text-black mt-5 mb-10 ${outfit.className}`}>
           Need a logo?
@@ -209,7 +210,7 @@ const Logos = () => {
             </div>
             <div className="w-[100%] p-5">
               <p><strong>Are you available to meet?</strong></p>
-              <p>Yes, I can meet you in person (within SF) or on a video call to discuss the project, free of charge. Send me an email at <a href="mailto:hello@bennyschmidt.com" target="_blank" className="underline">hello@bennyschmidt.com</a> to set up a time.</p>
+              <p>Yes, I can meet you in person (within SF) or on a video call to discuss the project, free of charge. Send me an email at <Link href="mailto:hello@bennyschmidt.com" target="_blank" className="underline">hello@bennyschmidt.com</Link> to set up a time.</p>
             </div>
             <div className="w-[100%] p-5">
               <p><strong>What's the turnaround time?</strong></p>
@@ -225,10 +226,10 @@ const Logos = () => {
             </div>
             <div className="w-[100%] p-5">
               <p><strong>What forms of payment do you accept?</strong></p>
-              <p>I accept most forms of payment, including <a href="https://venmo.com/u/Benny-Schmidt-1" target="_blank" className="underline">Venmo</a>.</p>
+              <p>I accept most forms of payment, including <Link href="https://venmo.com/u/Benny-Schmidt-1" target="_blank" className="underline">Venmo</Link>.</p>
             </div>
             <div className="w-[100%] p-5">
-              <p>Have any other questions? Email me at <a href="mailto:hello@bennyschmidt.com" target="_blank" className="underline">hello@bennyschmidt.com</a>.</p>
+              <p>Have any other questions? Email me at <Link href="mailto:hello@bennyschmidt.com" target="_blank" className="underline">hello@bennyschmidt.com</Link>.</p>
             </div>
           </div>
         </section>
