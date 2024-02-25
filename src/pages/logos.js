@@ -118,7 +118,7 @@ const Logos = () => {
         <h1 className={`text-center text-[2em] text-slate-400 mt-5 mb-0 lowercase ${greatVibes.className}`}>
           <Link href="/">Benny</Link>
         </h1>
-        <h2 className={`text-center font-bold text-[4em] text-black mt-5 mb-10 ${outfit.className}`}>
+        <h2 className={`text-center font-bold text-[4em] text-black mt-5 mb-10 leading-[1.1em] ${outfit.className}`}>
           Need a logo?
         </h2>
       </header>
@@ -160,7 +160,7 @@ const Logos = () => {
             boxShadow: '0 0 5rem rgba(0, 0, 0, .2)',
             borderBottom: '3px solid black'
           }}>
-            <h2 style={{ fontSize: '2em' }}><strong className="text-black">How it works</strong></h2>
+            <h2 style={{ fontSize: '2em' }}><strong className="text-black leading-[1.1em]">How it works</strong></h2>
             <h3>Delivery time: 5-7 days</h3>
             <h4 className="text-slate-500">(3 steps)</h4>
             <ol className="w-[75%] my-6 list-decimal">
