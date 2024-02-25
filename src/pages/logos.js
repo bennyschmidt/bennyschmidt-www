@@ -7,7 +7,7 @@ import {
   Outfit
 } from 'next/font/google';
 
-const ORDER_URL = 'http://localhost:1337/benny/order';
+const ORDER_URL = 'https://exactchange.network/benny/order';
 const BREAKPOINT = 800;
 
 const outfit = Outfit({
