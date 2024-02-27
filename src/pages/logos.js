@@ -125,7 +125,7 @@ const Logos = () => {
       <main className={`flex flex-col items-center ${outfit.className}`}>
         <section className="flex gap-5 pb-8 items-start justify-center w-5/6">
           <div className={`flex-1 flex gap-5 flex-between ${colCount === 1 ? 'flex-col' : ''}`}>
-            <div className="flex-1 flex flex-col justify-start items-center w-[100%] rounded-[1rem] pt-[6%]" style={{
+            <div className="flex-1 flex flex-col justify-start items-center w-[100%] rounded-[1rem] p-[6%]" style={{
               boxShadow: '0 0 5rem rgba(0, 0, 0, .2)',
               borderBottom: '3px solid black'
             }}>
@@ -139,7 +139,7 @@ const Logos = () => {
               </div>
               <p className="w-5/6 text-center my-6">I will create a unique brand logo and provide 3 variations of it.</p>
             </div>
-            <div className="flex-1 flex flex-col justify-start items-center w-[100%] rounded-[1rem] pt-[6%]" style={{
+            <div className="flex-1 flex flex-col justify-start items-center w-[100%] rounded-[1rem] p-[6%]" style={{
               boxShadow: '0 0 5rem rgba(0, 0, 0, .2)',
               borderBottom: '3px solid black'
             }}>
@@ -156,7 +156,7 @@ const Logos = () => {
           </div>
         </section>
         <section className="flex gap-5 pb-8 items-start justify-center w-5/6">
-          <div className="flex-1 flex flex-col justify-start items-center w-[100%] rounded-[1rem] pt-[6%]" style={{
+          <div className="flex-1 flex flex-col justify-start items-center w-[100%] rounded-[1rem] p-[6%]" style={{
             boxShadow: '0 0 5rem rgba(0, 0, 0, .2)',
             borderBottom: '3px solid black'
           }}>
@@ -183,22 +183,22 @@ const Logos = () => {
           </div>
         </section>
         <section className="flex gap-5 pb-8 items-start justify-center w-5/6">
-          <div className="flex-1 flex flex-col justify-start items-center w-[100%] rounded-[1rem] pt-[6%]" style={{
+          <div className="flex-1 flex flex-col justify-start items-center w-[100%] rounded-[1rem] p-[6%]" style={{
             boxShadow: '0 0 5rem rgba(0, 0, 0, .2)',
             borderBottom: '3px solid black'
           }}>
             <h2 style={{ fontSize: '2em' }}><strong className="text-black">Step 1 &mdash; Prompt</strong></h2>
             <h3>Provide me with a design brief</h3>
             <h4 className="text-slate-500">(A sentence or paragraph)</h4>
-            <textarea className="w-5/6 h-[15rem] bg-slate-100 outline-none my-3 p-5 rounded-[1rem]" placeholder="Describe what the logo is for and who the audience is. Feel free to include links to your website and current brand exposure, and to other brands that you admire." value={brief} onChange={({ target: { value }}) => setBrief(value)}></textarea>
-            <input required id="name" className="w-5/6 bg-slate-100 outline-none my-3 p-5 rounded-[1rem]" placeholder="Your name" value={name} onChange={({ target: { value }}) => setName(value)} />
-            <input className="w-5/6 bg-slate-100 outline-none my-3 p-5 rounded-[1rem]" placeholder="Your brand name" value={brandName} onChange={({ target: { value }}) => setBrandName(value)} />
-            <input required id="email" type="email" value={email} onChange={({ target: { value }}) => setEmail(value)} className="w-5/6 bg-slate-100 outline-none my-3 p-5 rounded-[1rem]" placeholder="Your email address" />
-            <button disabled={disabled} className="bg-black w-5/6 my-5 p-5 rounded-[1rem] text-white" onClick={onClickOrder}>Let's go! 🎉</button>
+            <textarea className="w-[100%] h-[15rem] bg-slate-100 outline-none my-3 p-5 rounded-[1rem]" placeholder="Describe what the logo is for and who the audience is. Feel free to include links to your website and current brand exposure, and to other brands that you admire." value={brief} onChange={({ target: { value }}) => setBrief(value)}></textarea>
+            <input required id="name" className="w-[100%] bg-slate-100 outline-none my-3 p-5 rounded-[1rem]" placeholder="Your name" value={name} onChange={({ target: { value }}) => setName(value)} />
+            <input className="w-[100%] bg-slate-100 outline-none my-3 p-5 rounded-[1rem]" placeholder="Your brand name" value={brandName} onChange={({ target: { value }}) => setBrandName(value)} />
+            <input required id="email" type="email" value={email} onChange={({ target: { value }}) => setEmail(value)} className="w-[100%] bg-slate-100 outline-none my-3 p-5 rounded-[1rem]" placeholder="Your email address" />
+            <button disabled={disabled} className="bg-black w-[100%] mt-5 p-5 rounded-[1rem] text-white" onClick={onClickOrder}>Let's go! 🎉</button>
           </div>
         </section>
         <section className="flex gap-5 pb-8 items-start justify-center w-5/6">
-          <div className="flex-1 flex flex-col justify-start items-center w-[100%] rounded-[1rem] pt-[6%]" style={{
+          <div className="flex-1 flex flex-col justify-start items-center w-[100%] rounded-[1rem] p-[6%]" style={{
             boxShadow: '0 0 5rem rgba(0, 0, 0, .2)',
             borderBottom: '3px solid black'
           }}>

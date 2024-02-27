@@ -7,6 +7,8 @@ import {
 
 import Image from 'next/image';
 
+import { slate } from 'tailwindcss/colors';
+
 const BREAKPOINT = 1000;
 
 const PORTFOLIO = [
@@ -204,13 +206,13 @@ export default function Home() {
           </figure>
           <div className={`flex flex-col justify-start max-w-[${full ? '100%' : '600px'}]`}>
             <h2 className="text-slate-800 font-semibold mb-4">Pixel Perfect Product Designer</h2>
-            <p className="text-slate-800">Benny is a master at Photoshop & Figma and has held professional positions at top companies as both a Product Designer and as a Software Engineer. With a design degree and passion for UI/UX, Benny enjoys delighting users with fun experiences and intuitive interfaces.</p>
+            <p className="text-slate-800">Benny has held professional positions at top companies as both a Product Designer and as a Software Engineer. With a background in design and passion for UI & front-end, Benny enjoys delighting users with fun experiences and intuitive interfaces.</p>
           </div>
         </div>
         <div className={`flex ${full ? 'flex-col-reverse' : ''} items-start justify-around gap-20 w-4/5 my-16`}>
           <div className="flex flex-col justify-start max-w-[600px]">
             <h2 className="text-slate-800 font-semibold mb-4">Full Stack React Developer</h2>
-            <p className="text-slate-800">Benny has been programming forever &mdash; well, for about 25 years. In recent years, his focus is almost exclusively on dynamic languages like Node, Ruby, and Python, and front-end frameworks like React.</p>
+            <p className="text-slate-800">Benny has been coding for about 25 years. In recent years, his focus is almost exclusively on dynamic languages like Node, Ruby, and Python, and front-end frameworks like React.</p>
             <div className="text-sm text-slate-500 mt-4">
               <h6>Current favorites:</h6>
               <ul className="list-none px-2">
@@ -249,15 +251,27 @@ export default function Home() {
             Get in touch
           </a>
         </aside>
-        <footer className="flex flex-col items-center justify-center">
-          <h3 className="flex gap-2 items-center justify-center">
-            <a href="https://www.dribbble.com/bennyschmidt" target="_blank">
-              <img alt="Benny Schmidt on Dribbble" src="/img/dribbble.svg" className="rounded" width="24px" height="24px" />
-            </a>
-            <a href="https://www.github.com/bennyschmidt" target="_blank">
-              <img alt="Benny Schmidt on GitHub" src="/img/github.svg" className="rounded" width="24px" height="24px" />
-            </a>
-          </h3>
+        <footer className="fixed bottom-0 left-0 right-0 z-10 box" style={{ boxShadow: `0 0 5rem ${slate[500]}50` }}>
+          <div className={`relative w-full h-full flex items-center justify-${full ? 'start' : 'center'}`}>
+            <h3 className="flex gap-2 mx-2 items-center justify-center">
+              <a href="https://www.dribbble.com/bennyschmidt" target="_blank">
+                <img alt="Benny Schmidt on Dribbble" src="/img/dribbble.svg" className="rounded" width="24px" height="24px" />
+              </a>
+              <a href="https://www.github.com/bennyschmidt" target="_blank">
+                <img alt="Benny Schmidt on GitHub" src="/img/github.svg" className="rounded" width="24px" height="24px" />
+              </a>
+            </h3>
+            <aside className="absolute flex items-center justify-end top-0 right-0 w-[50%] m-3 rounded-[1rem] text-slate-500 text-sm">
+              <em>Need a logo?</em>&nbsp;
+              <a
+                style={{ border: '2px solid #00b300' }}
+                className="rounded-[.5rem] py-[.1rem] px-[.5rem] font-bold mx-[.25rem] text-[#00b300] text-xs"
+                href="/logos"
+              >
+                From $395
+              </a>
+            </aside>
+          </div>
         </footer>
       </main>
     </div>
