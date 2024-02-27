@@ -6,6 +6,7 @@ import {
 } from 'next/font/google';
 
 import Image from 'next/image';
+import Link from 'next/link';
 
 import { slate } from 'tailwindcss/colors';
 
@@ -156,7 +157,7 @@ export default function Home() {
           Benny
         </h1>
       </header>
-      <main className={`flex flex-col items-center ${inter.className}`}>
+      <main className={`flex flex-col items-center ${inter.className} pb-7`}>
         <section className="flex gap-5 pb-8 items-start justify-center w-5/6">
           {portfolio.map((list, index) => (
             <ul key={index} className="flex flex-col justify-start gap-5 list-none w-full">
@@ -243,33 +244,33 @@ export default function Home() {
           </figure>
         </div>
         <aside className={`flex items-center justify-center gap-4 mt-10 mb-20${colCount < 3 ? ' flex-col' : ''}`}>
-          <a href="https://www.figma.com/file/di7L8balWujJqWyfQYbGbh/Resume?type=design&node-id=10%3A32" target="_blank" className="flex items-center justify-center text-slate-600 border-solid border-2 border-slate-200 rounded-full px-8 py-2 hover:bg-slate-600 hover:text-white hover:border-transparent">
-            <img src="/img/figma.svg" alt="Open resume in Figma" width={14} height={14} />&nbsp;
+          <Link href="https://www.figma.com/file/di7L8balWujJqWyfQYbGbh/Resume?type=design&node-id=10%3A32" target="_blank" className="flex items-center justify-center text-slate-600 border-solid border-2 border-slate-200 rounded-full px-8 py-2 hover:bg-slate-600 hover:text-white hover:border-transparent">
+            <Image src="/img/figma.svg" alt="Open resume in Figma" width={14} height={14} />&nbsp;
             View resume
-          </a>
-          <a href="mailto:hello@bennyschmidt.com" target="_blank" className="text-slate-600 border-solid border-2 border-slate-200 rounded-full px-8 py-2 hover:bg-slate-600 hover:text-white hover:border-transparent">
+          </Link>
+          <Link href="mailto:hello@bennyschmidt.com" target="_blank" className="text-slate-600 border-solid border-2 border-slate-200 rounded-full px-8 py-2 hover:bg-slate-600 hover:text-white hover:border-transparent">
             Get in touch
-          </a>
+          </Link>
         </aside>
-        <footer className="fixed bottom-0 left-0 right-0 z-10 box" style={{ boxShadow: `0 0 5rem ${slate[500]}50` }}>
+        <footer className="fixed bottom-0 left-0 right-0 z-10" style={{ boxShadow: `0 0 5rem ${slate[500]}50` }}>
           <div className={`relative w-full h-full flex items-center justify-${full ? 'start' : 'center'}`}>
-            <h3 className="flex gap-2 mx-2 items-center justify-center">
-              <a href="https://www.dribbble.com/bennyschmidt" target="_blank">
-                <img alt="Benny Schmidt on Dribbble" src="/img/dribbble.svg" className="rounded" width="24px" height="24px" />
-              </a>
-              <a href="https://www.github.com/bennyschmidt" target="_blank">
-                <img alt="Benny Schmidt on GitHub" src="/img/github.svg" className="rounded" width="24px" height="24px" />
-              </a>
+            <h3 className="flex gap-2 mx-2 items-center justify-center z-20">
+              <Link href="https://www.dribbble.com/bennyschmidt" target="_blank">
+                <Image alt="Benny Schmidt on Dribbble" src="/img/dribbble.svg" className="rounded" width={24} height={24} />
+              </Link>
+              <Link href="https://www.github.com/bennyschmidt" target="_blank">
+                <Image alt="Benny Schmidt on GitHub" src="/img/github.svg" className="rounded" width={24} height={24} />
+              </Link>
             </h3>
             <aside className="absolute flex items-center justify-end top-0 right-0 w-[50%] m-3 rounded-[1rem] text-slate-500 text-sm">
               <em>Need a logo?</em>&nbsp;
-              <a
+              <Link
                 style={{ border: '2px solid #00b300' }}
                 className="rounded-[.5rem] py-[.1rem] px-[.5rem] font-bold mx-[.25rem] text-[#00b300] text-xs"
                 href="/logos"
               >
                 From $395
-              </a>
+              </Link>
             </aside>
           </div>
         </footer>
