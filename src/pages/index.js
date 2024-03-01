@@ -253,7 +253,7 @@ export default function Home() {
           </Link>
         </aside>
         <footer className="fixed bottom-0 left-0 right-0 z-10" style={{ boxShadow: `0 0 5rem ${slate[500]}50` }}>
-          <div className={`relative w-full h-full flex items-center justify-${full ? 'start' : 'center'}`}>
+          <div className={`relative w-full h-full flex items-center justify-center`}>
             <h3 className="flex gap-2 mx-2 items-center justify-center z-20">
               <Link href="https://www.dribbble.com/bennyschmidt" target="_blank">
                 <Image alt="Benny Schmidt on Dribbble" src="/img/dribbble.svg" className="rounded" width={24} height={24} />
@@ -262,7 +262,7 @@ export default function Home() {
                 <Image alt="Benny Schmidt on GitHub" src="/img/github.svg" className="rounded" width={24} height={24} />
               </Link>
             </h3>
-            <aside className="absolute flex items-center justify-end top-0 right-0 w-[50%] m-3 rounded-[1rem] text-slate-500 text-sm">
+            {/* <aside className="absolute flex items-center justify-end top-0 right-0 w-[50%] m-3 rounded-[1rem] text-slate-500 text-sm">
               <em>Need a logo?</em>&nbsp;
               <Link
                 style={{ border: '2px solid #00b300' }}
@@ -271,7 +271,7 @@ export default function Home() {
               >
                 From $395
               </Link>
-            </aside>
+            </aside> */}
           </div>
         </footer>
       </main>
