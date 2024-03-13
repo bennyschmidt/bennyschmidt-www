@@ -14,6 +14,34 @@ const BREAKPOINT = 1000;
 
 const PORTFOLIO = [
   {
+    id: "portfolio-item-15",
+    alt: "AI assistant",
+    src: "/img/portfolio/item-15.png",
+    href: "https://dribbble.com/shots/23643368-Aime",
+    year: 2024
+  },
+  {
+    id: "portfolio-item-2",
+    alt: "Peach Player",
+    src: "/img/portfolio/item-2.png",
+    href: "https://dribbble.com/shots/3688183-Peach-Player",
+    year: 2017
+  },
+  {
+    id: "portfolio-item-14",
+    alt: "PR firm",
+    src: "/img/portfolio/item-14.png",
+    href: "https://dribbble.com/shots/23642749-PR-Firm",
+    year: 2024
+  },
+  {
+    id: "portfolio-item-5",
+    alt: "Capitol.pn (The Hunger Games)",
+    src: "/img/portfolio/item-3.png",
+    href: "https://www.behance.net/bennyschmidt",
+    year: 2011
+  },
+  {
     id: "portfolio-item-0",
     alt: "Game browser",
     src: "/img/portfolio/item-0.png",
@@ -26,13 +54,6 @@ const PORTFOLIO = [
     src: "/img/portfolio/item-1.png",
     href: "https://dribbble.com/shots/3039672-New-message",
     year: 2016
-  },
-  {
-    id: "portfolio-item-2",
-    alt: "Peach Player",
-    src: "/img/portfolio/item-2.png",
-    href: "https://dribbble.com/shots/3688183-Peach-Player",
-    year: 2017
   },
   {
     id: "portfolio-item-3",
@@ -49,17 +70,17 @@ const PORTFOLIO = [
     year: 2017
   },
   {
-    id: "portfolio-item-5",
-    alt: "Capitol.pn (The Hunger Games)",
-    src: "/img/portfolio/item-3.png",
-    href: "https://www.behance.net/bennyschmidt",
-    year: 2011
-  },
-  {
     id: "portfolio-item-6",
     alt: "Wyre",
     src: "/img/portfolio/item-8.png",
     href: "https://dribbble.com/shots/2991649-Send-money",
+    year: 2016
+  },
+  {
+    id: "portfolio-item-13",
+    alt: "Photos app",
+    src: "/img/portfolio/item-13.png",
+    href: "https://www.behance.net/gallery/44163693/Photo-stream",
     year: 2016
   },
   {
@@ -163,8 +184,19 @@ export default function Home() {
             <ul key={index} className="flex flex-col justify-start gap-5 list-none w-full">
               {list.map(({ id, alt, src, href, year }) => (
                 <li key={id} className="rounded-lg w-full bg-slate-100 p-2 item">
-                  <a href={href} target="_blank">
-                    <img id={id} alt={alt} src={src} className="bg-slate-800 rounded-lg" width="100%" height="100%" />
+                  <a href={href} target="_blank" className="relative block w-100 h-100">
+                    <Image
+                      id={id}
+                      alt={alt}
+                      src={src}
+                      className="bg-slate-800 rounded-lg"
+                      width={2800}
+                      height={2100}
+                      style={{
+                        width: '100%',
+                        height: '100%'
+                      }}
+                    />
                     <h3 className="text-sm text-slate-800 font-semibold flex flex-column items-center mt-2">
                       {alt}
                     </h3>
