@@ -173,6 +173,43 @@ export default function Home() {
 
   return !portfolio ? <div /> : (
     <div className="min-h-screen max-w-[1600px] mx-auto">
+      <aside
+        className="flex justify-between bg-[url('/img/arthas.jpg')] bg-center bg-cover rounded-[1rem] p-4 w-5/6 mx-auto my-4"
+        style={{ boxShadow: `0 0 3rem ${slate[500]}` }}
+      >
+        <div className="flex flex-col align-start justify-center">
+          <strong
+            className="text-white"
+            style={{ textShadow: '0 1px 0 black' }}
+          >
+            Latest Project: Arthas.AI
+          </strong>
+          {!full && <p
+            className="text-white"
+            style={{ textShadow: '0 1px 0 black' }}
+          >
+            Create <em>Limited Knowledge Personas (LKPs)</em> and interact with them directly or in your application.
+          </p>}
+        </div>
+        <a
+          className="block flex flex-1 min-w-[11rem] max-w-[11rem] gap-2 align-center justify-center bg-white text-slate-500 text-center my-1 rounded-[1rem] cursor-pointer p-4"
+          href="https://github.com/bennyschmidt/Arthas.AI"
+          target="_blank"
+        >
+          <Image
+            alt="Arthas.AI on GitHub"
+            src="/img/github.svg"
+            className="rounded"
+            width={20}
+            height={20}
+          />
+          <span
+            className="block flex flex-col align-center justify-center whitespace-nowrap overflow-hidden"
+          >
+            View Source
+          </span>
+        </a>
+      </aside>
       <header>
         <h1 className={`text-center text-[2.4em] text-slate-400 my-10 lowercase ${greatVibes.className}`}>
           Benny
