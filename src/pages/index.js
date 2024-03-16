@@ -199,7 +199,7 @@ export default function Home() {
           <Image
             alt="GitHub"
             src="/img/github.svg"
-            className="rounded hover:brightness-200"
+            className="rounded"
             width={20}
             height={20}
           />
