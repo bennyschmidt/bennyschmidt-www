@@ -188,7 +188,7 @@ export default function Home() {
             className="text-white"
             style={{ textShadow: '0 1px 0 black' }}
           >
-            Create <em>Limited Knowledge Personas (LKPs)</em> and interact with them directly or in your application.
+            Create <em>Domain-specific Personas (DSPs)</em> and interact with them directly or in your application.
           </p>}
         </div>
         <a
