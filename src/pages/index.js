@@ -192,14 +192,14 @@ export default function Home() {
           </p>}
         </div>
         <a
-          className="block flex flex-1 min-w-[11rem] max-w-[11rem] gap-2 align-center justify-center bg-white text-slate-500 text-center my-1 rounded-[1rem] cursor-pointer p-4"
+          className="block flex flex-1 min-w-[11rem] max-w-[11rem] gap-2 align-center justify-center bg-white text-slate-500 text-center my-1 rounded-[1rem] cursor-pointer p-4 hover:bg-black"
           href="https://github.com/bennyschmidt/Arthas.AI"
           target="_blank"
         >
           <Image
-            alt="Arthas.AI on GitHub"
+            alt="GitHub"
             src="/img/github.svg"
-            className="rounded"
+            className="rounded hover:brightness-200"
             width={20}
             height={20}
           />
