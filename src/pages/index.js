@@ -182,7 +182,7 @@ export default function Home() {
             className="text-white"
             style={{ textShadow: '0 1px 0 black' }}
           >
-            Latest Project: Arthas.AI
+            Latest Project: Ragdoll AI
           </strong>
           {!full && <p
             className="text-white"
@@ -193,7 +193,7 @@ export default function Home() {
         </div>
         <a
           className="block flex flex-1 min-w-[11rem] max-w-[11rem] gap-2 align-center justify-center bg-white text-slate-500 text-center my-1 rounded-[1rem] cursor-pointer p-4 hover:bg-black"
-          href="https://github.com/bennyschmidt/Arthas.AI"
+          href="https://github.com/bennyschmidt/ragdoll-studio"
           target="_blank"
         >
           <Image
