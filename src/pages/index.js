@@ -182,13 +182,13 @@ export default function Home() {
             className="text-white"
             style={{ textShadow: '0 1px 0 black' }}
           >
-            Latest Project: Ragdoll AI
+            Latest Project: Ragdoll Studio
           </strong>
           {!full && <p
             className="text-white"
             style={{ textShadow: '0 1px 0 black' }}
           >
-            Create <em>Domain-specific Personas (DSPs)</em> and interact with them directly or in your application.
+            Create <em>Domain-Specific Personas (DSPs)</em> and interact with them directly or in your application.
           </p>}
         </div>
         <a
