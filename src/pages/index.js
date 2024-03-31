@@ -174,7 +174,7 @@ export default function Home() {
   return !portfolio ? <div /> : (
     <div className="min-h-screen max-w-[1600px] mx-auto">
       <aside
-        className="flex justify-between bg-[url('/img/arthas.jpg')] bg-center bg-cover rounded-[1rem] p-4 w-5/6 mx-auto my-4"
+        className="flex justify-between items-center bg-[url('/img/arthas.jpg')] bg-center bg-cover rounded-[1rem] p-4 w-5/6 mx-auto my-4"
         style={{ boxShadow: `0 0 3rem ${slate[500]}` }}
       >
         <div className="flex flex-col align-start justify-center">
@@ -188,11 +188,11 @@ export default function Home() {
             className="text-white"
             style={{ textShadow: '0 1px 0 black' }}
           >
-            Create <em>Domain-Specific Personas (DSPs)</em> and interact with them directly or in your application.
+            Create domain-specific personas and interact with them directly or in your application.
           </p>}
         </div>
         <a
-          className="block flex flex-1 min-w-[11rem] max-w-[11rem] gap-2 align-center justify-center bg-white text-slate-500 text-center my-1 rounded-[1rem] cursor-pointer p-4 hover:bg-black"
+          className="block flex flex-1 min-w-[8rem] max-w-[11rem] gap-2 align-center justify-center bg-white text-slate-500 text-center text-sm my-1 rounded-[1rem] cursor-pointer p-2 lg:p-4 hover:bg-black"
           href="https://github.com/bennyschmidt/ragdoll-studio"
           target="_blank"
         >
