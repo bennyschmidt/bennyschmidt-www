@@ -188,25 +188,18 @@ export default function Home() {
             className="text-white"
             style={{ textShadow: '0 1px 0 black' }}
           >
-            Create domain-specific personas and interact with them directly or in your application.
+            The creative suite for character-driven AI experiences.
           </p>}
         </div>
         <a
           className="block flex flex-1 min-w-[8rem] max-w-[11rem] gap-2 align-center justify-center bg-white text-slate-500 text-center text-sm my-1 rounded-[1rem] cursor-pointer p-2 lg:p-4 hover:bg-black"
-          href="https://github.com/bennyschmidt/ragdoll-studio"
+          href="https://ragdoll-studio.vercel.app"
           target="_blank"
         >
-          <Image
-            alt="GitHub"
-            src="/img/github.svg"
-            className="rounded"
-            width={20}
-            height={20}
-          />
           <span
             className="block flex flex-col align-center justify-center whitespace-nowrap overflow-hidden"
           >
-            View Source
+            View Project
           </span>
         </a>
       </aside>
