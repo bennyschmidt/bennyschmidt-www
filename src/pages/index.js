@@ -188,7 +188,7 @@ export default function Home() {
             className="text-white opacity-50"
             style={{ textShadow: '0 1px 0 black' }}
           >
-            Imagination at scale.
+            Work smart, not hard.
           </p>}
         </div>
         <a
