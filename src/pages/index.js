@@ -188,7 +188,7 @@ export default function Home() {
             className="text-white"
             style={{ textShadow: '0 1px 0 black' }}
           >
-            A classic role-playing experience rich with dialog and storytelling.
+            A classic role-playing experience!
           </p>}
         </div>
         <a
