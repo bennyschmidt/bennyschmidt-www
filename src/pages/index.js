@@ -178,7 +178,7 @@ export default function Home() {
           benny&nbsp;&bull;
         </h1>
         <span>
-          San Francisco, CA
+          A software engineer in California.
         </span>
       </header>
       <h3 className="w-5/6 mx-auto mt-2 mb-4 text-slate-400">
