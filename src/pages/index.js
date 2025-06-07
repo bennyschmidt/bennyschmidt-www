@@ -177,7 +177,7 @@ export default function Home() {
         <h1 className={`text-[1.24em] my-10 ${fruktur.className}`}>
           benny&nbsp;&bull;
         </h1>
-        <span>
+        <span className="text-sm">
           A software engineer in California.
         </span>
       </header>
@@ -338,13 +338,16 @@ export default function Home() {
           </Link>
         </aside>
         <footer className="fixed z-30 bottom-0 left-0 right-0 z-10" style={{ boxShadow: `0 0 5rem ${slate[500]}50` }}>
-          <div className={`relative w-full h-full flex items-center justify-center`}>
-            <h3 className="flex gap-2 mx-2 items-center justify-center z-20">
+          <div className={`relative w-full h-full flex items-center justify-end`}>
+            <h3 className="flex gap-2 mx-2 items-center justify-center text-center z-20 opacity-50">
+              <Link href="https://apps.apple.com/us/developer/benjamin-schmidt/id1463339640" target="_blank">
+                <Image alt="Benny Schmidt on Apple Developer" src="/img/app-store.svg" className="rounded" width={26} height={26} />
+              </Link>
               <Link href="https://www.dribbble.com/bennyschmidt" target="_blank">
                 <Image alt="Benny Schmidt on Dribbble" src="/img/dribbble.svg" className="rounded" width={24} height={24} />
               </Link>
               <Link href="https://www.github.com/bennyschmidt" target="_blank">
-                <Image alt="Benny Schmidt on GitHub" src="/img/github.svg" className="rounded" width={24} height={24} />
+                <Image alt="Benny Schmidt on GitHub" src="/img/github.svg" className="rounded" width={25} height={25} />
               </Link>
             </h3>
             {/* <aside className="absolute flex items-center justify-end top-0 right-0 w-[50%] m-3 rounded-lg text-slate-500 text-sm">
