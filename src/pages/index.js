@@ -214,7 +214,7 @@ export default function Home() {
             <span
               className="block flex gap-2 align-center justify-center whitespace-nowrap overflow-hidden text-lg"
             >
-              <Image alt="Benny Schmidt on Dribbble" src="/img/app-store.svg" className="rounded" width={24} height={24} />
+              <Image alt="Benny Schmidt on Dribbble" src="/img/app-store.svg" className="block object-contain" width={24} height={24} />
               Download
             </span>
           </a>
