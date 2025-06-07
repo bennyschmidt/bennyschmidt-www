@@ -175,8 +175,11 @@ export default function Home() {
     <div className="min-h-screen max-w-[1600px] mx-auto">
       <header className="flex gap-1 items-center w-5/6 mx-auto">
         <h1 className={`text-[1.24em] my-10 ${fruktur.className}`}>
-          benny
+          benny&nbsp;&bull;
         </h1>
+        <span>
+          San Francisco, CA
+        </span>
       </header>
       <h3 className="w-5/6 mx-auto mt-2 mb-4 text-slate-400">
         Featured
@@ -185,7 +188,7 @@ export default function Home() {
         className="relative flex items-end bg-black bg-top bg-cover rounded-lg w-5/6 h-96 mx-auto mt-2 mb-6 overflow-hidden"
         style={{ boxShadow: `0 0 3rem ${slate[500]}` }}
       >
-        <div className="absolute z-20 flex justify-between items-end bg-[#00000025] w-full p-4">
+        <div className="absolute z-20 flex justify-between items-center bg-[#00000025] w-full p-4">
           <div className="flex flex-col">
             <strong
               className="text-white uppercase"
@@ -205,7 +208,7 @@ export default function Home() {
           </div>
           <a
             className="block flex flex-1 min-w-[8rem] max-w-[11rem] gap-2 align-center justify-center bg-white text-[black] text-center text-sm my-1 rounded-lg cursor-pointer p-2 lg:p-4 hover:bg-black hover:text-[white]"
-            href="https://apps.apple.com/us/app/meteora-fantasy-rpg/id6746340641?mt=12"
+            href="https://apps.apple.com/us/app/meteora-fantasy-rpg/id6746340641"
             target="_blank"
           >
             <span
