@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 
 import {
-  Great_Vibes as GreatVibes,
+  Fruktur,
   Inter
 } from 'next/font/google';
 
@@ -110,7 +110,7 @@ const inter = Inter({
   subsets: ['latin']
 });
 
-const greatVibes = GreatVibes({
+const fruktur = Fruktur({
   subsets: ['latin'],
   weight: '400'
 });
@@ -173,41 +173,62 @@ export default function Home() {
 
   return !portfolio ? <div /> : (
     <div className="min-h-screen max-w-[1600px] mx-auto">
-      <aside
-        className="flex justify-between items-center bg-[url('/img/meteora.png')] bg-top bg-cover rounded-[1rem] p-4 w-5/6 mx-auto my-4"
-        style={{ boxShadow: `0 0 3rem ${slate[500]}` }}
-      >
-        <div className="flex flex-col align-start justify-center">
-          <strong
-            className="text-white"
-            style={{ textShadow: '0 1px 0 black' }}
-          >
-            Latest Project: METEORA
-          </strong>
-          {!full && <p
-            className="text-white"
-            style={{ textShadow: '0 1px 0 black' }}
-          >
-            A classic role-playing experience!
-          </p>}
-        </div>
-        <a
-          className="block flex flex-1 min-w-[8rem] max-w-[11rem] gap-2 align-center justify-center bg-white text-[black] text-center text-sm my-1 rounded-[1rem] cursor-pointer p-2 lg:p-4 hover:bg-black hover:text-[white]"
-          href="https://www.playmeteora.com"
-          target="_blank"
-        >
-          <span
-            className="block flex flex-col align-center justify-center whitespace-nowrap overflow-hidden"
-          >
-            View Project
-          </span>
-        </a>
-      </aside>
-      <header>
-        <h1 className={`text-center text-[2.4em] text-slate-400 my-10 lowercase ${greatVibes.className}`}>
-          Benny
+      <header className="flex gap-1 items-center w-5/6 mx-auto">
+        <h1 className={`text-[1.24em] my-10 ${fruktur.className}`}>
+          benny
         </h1>
       </header>
+      <h3 className="w-5/6 mx-auto mt-2 mb-4 text-slate-400">
+        Featured
+      </h3>
+      <aside
+        className="relative flex items-end bg-black bg-top bg-cover rounded-lg w-5/6 h-96 mx-auto mt-2 mb-6 overflow-hidden"
+        style={{ boxShadow: `0 0 3rem ${slate[500]}` }}
+      >
+        <div className="absolute z-20 flex justify-between items-end bg-[#00000025] w-full p-4">
+          <div className="flex flex-col">
+            <strong
+              className="text-white uppercase"
+              style={{
+                letterSpacing: '2px',
+                textShadow: '0 1px 0 black'
+              }}
+            >
+              Meteora
+            </strong>
+            {!full && <p
+              className="text-white"
+              style={{ textShadow: '0 1px 0 black' }}
+            >
+              A classic role-playing experience!
+            </p>}
+          </div>
+          <a
+            className="block flex flex-1 min-w-[8rem] max-w-[11rem] gap-2 align-center justify-center bg-white text-[black] text-center text-sm my-1 rounded-lg cursor-pointer p-2 lg:p-4 hover:bg-black hover:text-[white]"
+            href="https://apps.apple.com/us/app/meteora-fantasy-rpg/id6746340641?mt=12"
+            target="_blank"
+          >
+            <span
+              className="block flex gap-2 align-center justify-center whitespace-nowrap overflow-hidden text-lg"
+            >
+              <Image alt="Benny Schmidt on Dribbble" src="/img/app-store.svg" className="rounded" width={24} height={24} />
+              Download
+            </span>
+          </a>
+        </div>
+        <video
+          muted
+          loop
+          autoPlay
+          src="/video/meteora.mp4"
+          width="100%"
+          height="100%"
+          className="absolute z-10 w-full h-full object-cover"
+        />
+      </aside>
+      <h3 className="w-5/6 mx-auto mt-2 mb-4 text-slate-400">
+        Design Portfolio
+      </h3>
       <main className={`flex flex-col items-center ${inter.className} pb-7`}>
         <section className="flex gap-5 pb-8 items-start justify-center w-5/6">
           {portfolio.map((list, index) => (
@@ -313,7 +334,7 @@ export default function Home() {
             Get in touch
           </Link>
         </aside>
-        <footer className="fixed bottom-0 left-0 right-0 z-10" style={{ boxShadow: `0 0 5rem ${slate[500]}50` }}>
+        <footer className="fixed z-30 bottom-0 left-0 right-0 z-10" style={{ boxShadow: `0 0 5rem ${slate[500]}50` }}>
           <div className={`relative w-full h-full flex items-center justify-center`}>
             <h3 className="flex gap-2 mx-2 items-center justify-center z-20">
               <Link href="https://www.dribbble.com/bennyschmidt" target="_blank">
@@ -323,7 +344,7 @@ export default function Home() {
                 <Image alt="Benny Schmidt on GitHub" src="/img/github.svg" className="rounded" width={24} height={24} />
               </Link>
             </h3>
-            {/* <aside className="absolute flex items-center justify-end top-0 right-0 w-[50%] m-3 rounded-[1rem] text-slate-500 text-sm">
+            {/* <aside className="absolute flex items-center justify-end top-0 right-0 w-[50%] m-3 rounded-lg text-slate-500 text-sm">
               <em>Need a logo?</em>&nbsp;
               <Link
                 style={{ border: '2px solid #00b300' }}

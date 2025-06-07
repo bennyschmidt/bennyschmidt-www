@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 import {
-  Great_Vibes as GreatVibes,
+  Fruktur,
   Outfit
 } from 'next/font/google';
 
@@ -15,7 +15,7 @@ const outfit = Outfit({
   subsets: ['latin']
 });
 
-const greatVibes = GreatVibes({
+const fruktur = Fruktur({
   subsets: ['latin'],
   weight: '400'
 });
@@ -115,7 +115,7 @@ const Logos = () => {
   return (
     <div className="min-h-screen max-w-[800px] mx-auto">
       <header>
-        <h1 className={`text-center text-[2em] text-slate-400 mt-5 mb-0 lowercase ${greatVibes.className}`}>
+        <h1 className={`text-center text-[2em] text-slate-400 mt-5 mb-0 lowercase ${fruktur.className}`}>
           <Link href="/">Benny</Link>
         </h1>
         <h2 className={`text-center font-bold text-[4em] text-black mt-5 mb-10 leading-[1.1em] ${outfit.className}`}>
