@@ -208,7 +208,7 @@ export default function Home() {
           </div>
           <a
             className="block flex flex-1 min-w-[8rem] max-w-[11rem] gap-2 align-center justify-center bg-white text-[black] text-center text-sm my-1 rounded-lg cursor-pointer p-2 lg:p-4 hover:bg-black hover:text-[white]"
-            href="https://apps.apple.com/us/app/meteora-fantasy-rpg/id6746340641"
+            href="https://apps.apple.com/us/app/meteora/id6746340641"
             target="_blank"
           >
             <span
