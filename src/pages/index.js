@@ -330,7 +330,7 @@ export default function Home() {
           </figure>
         </div>
         <aside className={`flex items-center justify-center gap-4 mt-10 mb-20${colCount < 3 ? ' flex-col' : ''}`}>
-          <Link href="https://docs.google.com/document/d/e/2PACX-1vTDXnAtL_uwCaMidOZrNz-TQkwixaPgPcKdWhlugh5XDJ9K9JjLge7ncH3Vdqp9En87HuPpLZSgZ0Kr/pub" target="_blank" className="flex items-center justify-center text-slate-600 border-solid border-2 border-slate-200 rounded-full px-8 py-2 hover:bg-slate-600 hover:text-white hover:border-transparent">
+          <Link href="https://docs.google.com/document/d/e/2PACX-1vSXFmpiXeOqFH2g_aajsR3LpGENGFSTzICwvlZXQwXpf8Vlmst4xwdputrH1vw2VG5GkYJCIB3vJxwh/pub" target="_blank" className="flex items-center justify-center text-slate-600 border-solid border-2 border-slate-200 rounded-full px-8 py-2 hover:bg-slate-600 hover:text-white hover:border-transparent">
             View resume
           </Link>
           <Link href="mailto:hello@bennyschmidt.com" target="_blank" className="text-slate-600 border-solid border-2 border-slate-200 rounded-full px-8 py-2 hover:bg-slate-600 hover:text-white hover:border-transparent">
