@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 
 import {
-  Fruktur,
+  Henny_Penny,
   Inter
 } from 'next/font/google';
 
@@ -110,7 +110,7 @@ const inter = Inter({
   subsets: ['latin']
 });
 
-const fruktur = Fruktur({
+const hennyPenny = Henny_Penny({
   subsets: ['latin'],
   weight: '400'
 });
@@ -174,12 +174,9 @@ export default function Home() {
   return !portfolio ? <div /> : (
     <div className="min-h-screen max-w-[1600px] mx-auto">
       <header className="flex gap-1 items-center w-5/6 mx-auto">
-        <h1 className={`text-[1.24em] my-10 ${fruktur.className}`}>
-          benny&nbsp;&bull;
+        <h1 className={`text-[1.4em] mx-auto my-10 ${hennyPenny.className} text-slate-400`}>
+          benny
         </h1>
-        <span className="text-sm">
-          A software engineer in California.
-        </span>
       </header>
       <h3 className="w-5/6 mx-auto mt-2 mb-4 text-slate-400">
         Featured
