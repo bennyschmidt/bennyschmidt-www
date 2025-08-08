@@ -175,7 +175,7 @@ export default function Home() {
     <div className="min-h-screen max-w-[1600px] mx-auto">
       <header className="flex gap-1 items-center w-5/6 mx-auto">
         <h1 className={`text-[1.4em] mx-auto my-10 ${hennyPenny.className} text-slate-400`}>
-          benny
+          Benny
         </h1>
       </header>
       <h3 className="w-5/6 mx-auto mt-2 mb-4 text-slate-400">
